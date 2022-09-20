@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- febinocci means 1st number add the next number..like(0 1 1 2 3 5 8 13 ...) -->
+    <h3></h3>
+    <script>
+        var var1=0;
+        var var2=1;
+        var var3;
+        var num=prompt("Enter the limit to generate fibonacci no",0);
+        document.write(var1+"<br/>");
+        document.write(var2+"<br/>");
+        for(var i=3;i<=num;i++)
+        {
+            var3=var1+var2;
+            var1=var2;
+            var2=var3;
+            document.write(var3+"<br/>");
+        }
+    </script>
+    <script>
+        function fiba(n)
+        {
+            fq=[0,1]
+            if(n <=1)
+            {
+                document.write(fq[0])
+            }
+            if(n <=2)
+            {
+                document.write(fq[1])
+            }
+        }
+    </script>
+</body>
+</html>

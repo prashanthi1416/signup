@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var num = 153;
+        var sum = 0;
+        var check = num;
+        var armstrong = num;
+        var len = num.toString().length;
+        var power = 0;
+        while (num != 0) {
+            armstrong = num % 10;
+            power = Math.pow(armstrong, len);
+            sum = sum + power;
+            num = parseInt(num / 10);
+        }
+        if (check == sum) {
+            document.write(check + "is Armstrong number");
+            return false;
+        }
+        else {
+            document.write(check + "is not a Armstrong number");
+        }
+        }
+    </script>
+</body>
+
+</html>

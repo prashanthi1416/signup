@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            color: rgb(166, 223, 228);
+            padding: 20px;
+            background-color:;
+        }
+        body {
+            text-align: center;
+            background-image:linear-gradient(rgb(0, 0, 128),pink);
+            color:aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Check Armstrong Numbers</h1>
+    <div clas="armstrong">
+    <label>Enter Any Number</label></br></br>
+    <input id="no_input"></br></br>
+    <button onclick="arm()">Check</button></br></br>
+    </div>
+    <script type="text/javascript">
+        function arm() 
+        {
+            var arm=0, a,b,c,d,num;
+            num=Number(document.getElementById("no_input").value);
+            temp=num;
+            while(temp>0)
+            {
+                a=temp%10;
+                temp=parseInt(temp/10);
+                arm=arm+a*a*a;
+            }
+            if(arm == num){
+                alert("Armstrong number");
+            }
+            else{
+                alert("it is not a Armstrong number");
+            }
+        }
+      </script>      
+</body>
+</html>

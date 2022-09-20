@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .p2{
+            background-color:aqua;
+            font-weight:bold;
+            font-size:30px;
+        }
+        .p{
+            background-color:rebeccapurple;
+            color:white;
+            font-size:20px;
+            text-align: center;
+        }
+        .p1{
+            background-color:rgb(36, 195, 136);
+            font-size:26px;
+            color:white;
+            padding-top: 10px;
+            margin-top: 5px;
+            padding-left:40%;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="p2">
+    <script>
+        var rows=5;
+        for(var i=1; i<=rows; i++)
+        {
+            for(var k=1; k<=(rows-i); k++)
+            {
+                document.write("&nbsp");
+            }
+            for(var j=1; j<=i; j++)
+            {
+                document.write("*");
+            }
+            document.write("</br>");
+        }
+    </script>
+    </div>
+    <div class="p">
+    <script>
+        var i,j;
+        for(var i=6; i>=1; i--)
+        {
+            for(var j=1; j<=i; j++)
+            {
+                document.write(i+"");
+            }
+            document.write("</br>");
+        }
+    </script>
+    
+    </div>
+    <div class="p1">
+    <script>
+        var rows=6;
+        for(var i=1; i<=6; i++)
+        {
+            for(var j=1; j<=i; j++)
+            {
+                document.write(j+"");
+            }
+            document.write("</br>");
+        }
+    </script>
+    </div>
+</body>
+</html>

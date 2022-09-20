@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding:20px;
+            background: #222f3e;
+            color:white;
+            text-align: center;
+        }
+        button{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding:10px;
+            background: #fff;
+            border: none;
+            outline: none;
+            font-size:18px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Background color change By clicking on button</h1>
+    <button>Button color</button>
+    <script>
+        var color=["#222f3e","#f368e0","#ee5253","#0abde3","#10ac84","#5f27cd"];
+        var i=0;
+        document.querySelector("button").addEventListener("click",function(){
+            i =i<color.length ? ++i:0;
+            document.querySelector("body").style.background=color[i];
+        })
+    </script>
+</body>
+</html>

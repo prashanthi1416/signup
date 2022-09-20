@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 60px;
+            margin: 0 auto;
+           border:2px solid black;
+            background-image:linear-gradient(yellow,aqua);
+        }
+        h1 {
+            font-family: sans-serif;
+            font-size: 25px;
+            color: rgb(62, 48, 221);
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        input {
+            padding: 15px;
+        }
+
+        #result {
+            text-align: center;
+            color: red;
+            font-size: 20px;
+            font-family: arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Check whether a number is palindrome</h1>
+    <form id="myform">
+        <input type="text" name="" id="number">
+        <input type="submit" value="Check">
+    </form>
+    <p id="result"></p>
+    <script>
+        var frm=document.getElementById("myform");
+        frm.onsubmit=function() {
+            var user=document.getElementById("number").value;
+            var view=document.getElementById("result");
+            var store=user;
+            var rev=0;
+            while(store!=0){
+                rev=(rev*10)+(store%10);
+                store=parseInt(store/10);
+            }
+            if(user==rev){
+                result.innerHTML="This is palindrome";
+                return false;
+            }
+            else{
+                result.innerHTML="This is not a palindrome";
+                return false;
+            }
+        }
+    </script>
+    
+</body>
+
+</html>

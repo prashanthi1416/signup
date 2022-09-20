@@ -1,0 +1,39 @@
+.button_1{
+    top: -35%;
+}
+.button_2{
+    top:-35%;
+}
+.name{
+    top:730px;
+    margin-left:460px;
+    position:absolute;
+}
+.local{
+    top:1150px;
+    margin-left:340px;
+    position:absolute;
+}
+.img_1{
+    width:200px;
+    height:200px;
+    padding:5px;
+    margin:0 auto;
+    top:10px;
+    position:relative;
+    border-radius:50%;
+}
+.img_2{
+    width:200px;
+    height:200px;
+    padding:5px;
+    margin:1 auto;
+    top:10px;
+    position:relative;
+    border-radius: 50%;
+}
+.text_1
+{
+font-size:10px;
+padding:20px;
+}
